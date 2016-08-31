@@ -215,7 +215,7 @@ io.on('connection', function(socket){
         sshuser = globalsshuser + '@';
     }*/
 
-    const term = pty.spawn('ssh', ['pepe@localhost', '-p', '22', '-o', 'PreferredAuthentications=password'], {
+    const term = pty.spawn('ssh', ['root@localhost', '-p', '22', '-o', 'PreferredAuthentications=password'], {
       name: 'xterm-256color',
       cols: 80,
       rows: 30
